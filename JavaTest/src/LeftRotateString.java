@@ -3,6 +3,7 @@ public class LeftRotateString {
     {
 test t=new test();
 System.out.println(t.LeftRotateString("",6));
+        System.out.println(t.LeftRotateString1("sdsada",21));
     }
 
 
@@ -43,6 +44,32 @@ System.out.println(t.LeftRotateString("",6));
 
          }
      }
+
+     public String LeftRotateString1(String str, int n){
+         if(str.length()==0){
+             return str;
+         }
+         if(n<=str.length()){
+             StringBuilder str1=new StringBuilder(str);
+             StringBuilder str2=new StringBuilder(str);
+           String s1=  str1.substring(0,n);
+          String s2=   str2.substring(n,str.length());
+
+             return s2+s1;
+         }else{
+             n=n%str.length();
+             StringBuilder str1=new StringBuilder(str);
+             StringBuilder str2=new StringBuilder(str);
+             String s1=  str1.substring(0,n);
+             String s2=   str2.substring(n,str.length());
+
+             return s2+s1;
+         }
+
+
+     }
+
+
  }
 
 
