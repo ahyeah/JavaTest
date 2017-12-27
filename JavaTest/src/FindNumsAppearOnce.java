@@ -1,5 +1,9 @@
 public class FindNumsAppearOnce {
     //一个整型数组里除了两个数字之外，其他的数字都出现了两次。请写程序找出这两个只出现一次的数字。
+
+    //
+    //对于位运算有:b&1=b;b^0=b;
+    //对于数运算：x^0=x;x^x=0;对于b为00001,00010.....当 x&b==b时可得该位数为1;对于全为1的一个数n有 n&x=x;
     public static void main(String args[]) {
         int array[] = {2, 4, 4, 5, 3, 3, 9, 9};
         int num1[] = {0};
@@ -8,7 +12,9 @@ public class FindNumsAppearOnce {
         System.out.println(num1[0]);
         System.out.println(num2[0]);
     }
+//todo
 
+    //test
     public static void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
         ///解题思路：根据一个数与0的异或结果为本身，把所有的数进行异或，的到的是不同数的异或，根据易货 的结果的1的位置进行分组
         if (array == null || array.length < 2)

@@ -1,7 +1,7 @@
 public class FindBitOne {
     //根据1&0=0,1&1=1求出比特位为1的位置
     public static void main(String args[]){
-        System.out.println(findBit(6));
+        System.out.println(findBit(3));
     }
 
 
