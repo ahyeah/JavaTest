@@ -31,7 +31,7 @@ public class FindNumsAppearOnce {
                 num2[0] ^= array[i];
         }
     }
-
+//00
     public static int findFirstBitIs(int num) {
         int indexBit = 0;
         while (((num & 1) == 0) && (indexBit) < 8 * 4) {
