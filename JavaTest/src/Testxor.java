@@ -18,6 +18,12 @@ public class Testxor {
 
         System.out.println(s1==str);
         System.out.println(s2==str);
+
+        switch(s1){
+            case "test" : {s2=s2+s1;s2=s3+s2;}
+            case "s":s2=s2+s2;
+            default :s2=s2;
+        }
     }
 
 
